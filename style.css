@@ -1,0 +1,166 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/*tüm elemanlar*/
+*{
+     
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
+     font-family: "Poppins",sans-serif;
+}
+
+/*tüm sayfa*/
+body{
+     height:100vh;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #f4f4f4;
+}
+
+/*profil kartı*/
+.profile-card{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width:370px;
+     width:100%;
+     background:#fff;
+     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+     border-radius: 24px;
+     padding: 25px;
+     position: relative;
+}
+
+
+/*profil kartı üst mavi kısım*/
+.profile-card::before{
+     content:'';
+     position:absolute;
+     top:0;
+     left:0;
+     height:36%;
+     width:100%;
+     background-color:#4070f4;
+     border-radius:24px 24px 0 0;
+}
+
+/*fotoğraf clası*/
+.image{
+     position:relative;
+     block-size:150px;
+     inline-size:150px;
+     border-radius: 50%;
+     background-color: #4070f4;
+     padding:3px;
+     margin-bottom: 10px;
+}
+
+/*fotoğraf clası içindeki her içerik */
+.image .profile-img{
+     block-size: 100%;
+     inline-size:100%;
+     object-fit:cover;
+     border-radius: 50%;
+     border:3px solid #fff;
+
+}
+
+/*profil kartı içindeki yazılar*/
+.profile-card .text-data{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color:#333;
+}
+
+/*name clası içindekiler*/
+.text-data.name{
+     font-size: 22px;
+     font-weight: 500;
+}
+
+/*job clası içindekiler*/
+.text-data.job{
+     font-size: 22px;
+     font-weight: 500;
+}
+
+/*profil kartı içindeki sosyal medya logoları*/
+.profile-card .media-buttons{
+     display: flex;
+     align-items: center;
+     margin-top: 15px;
+}
+
+/*logo clası içindekiler */
+.media-buttons .link{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     font-size: 18px;
+     height: 34px;
+     width:  34px;
+     border-radius: 50%;
+     margin: 8px;
+     background-color: #4070f4;
+     text-decoration: none;
+}
+
+/*butonlar*/
+.profile-card .buttons{
+display: flex;
+align-items: center;
+margin-top: 25px;
+}
+
+/*her buton içindeki içerikler*/
+.buttons .button{
+     color:#fff;
+     border:none;
+     font-size: 14px;
+     font-weight: 400;
+     border-radius: 24px;
+    padding: 8px 24px;
+    margin: 0 10px;
+    background-color: #4070f4;
+    cursor:pointer;   
+    transition:  all 0.3s ease;
+}
+
+/*buton canlı olsun*/
+.buttons .button:hover{
+  
+     background-color: #0e4bf1;
+}
+
+/*istatistikler*/
+.profile-card .analytics{
+     display:flex; /*öğeleri bir kutu içinde esnek hizalar*/
+     align-items:center;
+     margin-top:25px;
+}
+
+
+/*istatistikler içindekiler */
+.analytics .data{
+     display:flex;
+     align-items:center; /*içeriği ortaya hizala*/
+     color:#333; /*kenarlık rengi*/
+     padding:0 20px; /*kenarlık ile içerik arasındaki boşluk*/
+     border-right: 2px solid #e7e7e7; /*sadece sağ kenarlık olsun*/
+}
+
+/*her istatistik datasının i elementi*/
+.data i{
+     font-size: 18px;
+     margin-right: 6px;
+}
+
+/*her istatistik datasından sonra gelen çizgi için*/
+.data:last-child{
+     border-right:none;
+}
